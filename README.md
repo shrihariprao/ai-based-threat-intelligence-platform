@@ -141,7 +141,7 @@ Threat intelligence sources  (CSV feeds, security event exports)
 ## Installation
 
 ```bash
-git clone https://github.com/<your-username>/ai-based-threat-intelligence-platform.git
+git clone https://github.com/shrihariprao/ai-based-threat-intelligence-platform.git
 cd ai-based-threat-intelligence-platform
 pip install -r requirements.txt
 ```
