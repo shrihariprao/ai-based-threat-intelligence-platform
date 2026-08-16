@@ -1,0 +1,41 @@
+{
+  "_about": {
+    "description": "Curated local subset of MITRE ATT&CK Enterprise techniques used for offline TTP mapping. Technique IDs and names are from the public MITRE ATT&CK knowledge base; descriptions here are short paraphrases written for this project, not verbatim MITRE text.",
+    "attribution": "MITRE ATT&CK is a registered trademark of The MITRE Corporation. See https://attack.mitre.org/",
+    "coverage": "Subset only. This file covers the threat categories handled by this prototype and is not a complete ATT&CK export.",
+    "version": "local-subset-1.0"
+  },
+  "mappings": {
+    "command_and_control": [
+      {"technique_id": "T1071", "technique_name": "Application Layer Protocol", "tactic": "Command and Control", "description": "Adversary communicates with compromised hosts over common protocols so the traffic blends with normal activity."},
+      {"technique_id": "T1573", "technique_name": "Encrypted Channel", "tactic": "Command and Control", "description": "Command traffic is encrypted to hide its content from network inspection."}
+    ],
+    "phishing": [
+      {"technique_id": "T1566", "technique_name": "Phishing", "tactic": "Initial Access", "description": "Adversary sends deceptive messages to obtain credentials or deliver a malicious payload."},
+      {"technique_id": "T1204", "technique_name": "User Execution", "tactic": "Execution", "description": "The intrusion depends on a user opening a file or following a link."}
+    ],
+    "malware_delivery": [
+      {"technique_id": "T1105", "technique_name": "Ingress Tool Transfer", "tactic": "Command and Control", "description": "Additional tools or payloads are transferred onto a host from an external system."},
+      {"technique_id": "T1204", "technique_name": "User Execution", "tactic": "Execution", "description": "Delivery succeeds only when the target runs the supplied file."}
+    ],
+    "scanning": [
+      {"technique_id": "T1595", "technique_name": "Active Scanning", "tactic": "Reconnaissance", "description": "Adversary probes hosts and services to identify reachable systems and exposed ports."},
+      {"technique_id": "T1046", "technique_name": "Network Service Discovery", "tactic": "Discovery", "description": "Services running on remote hosts are enumerated to find exploitable entry points."}
+    ],
+    "brute_force": [
+      {"technique_id": "T1110", "technique_name": "Brute Force", "tactic": "Credential Access", "description": "Repeated authentication attempts are made to guess valid credentials."},
+      {"technique_id": "T1078", "technique_name": "Valid Accounts", "tactic": "Persistence", "description": "Credentials obtained by guessing are then used as legitimate logins."}
+    ],
+    "data_exfiltration": [
+      {"technique_id": "T1041", "technique_name": "Exfiltration Over C2 Channel", "tactic": "Exfiltration", "description": "Collected data is sent out through the same channel used for command traffic."},
+      {"technique_id": "T1048", "technique_name": "Exfiltration Over Alternative Protocol", "tactic": "Exfiltration", "description": "Data leaves the network over a protocol separate from the main command channel."}
+    ],
+    "botnet": [
+      {"technique_id": "T1583.005", "technique_name": "Acquire Infrastructure: Botnet", "tactic": "Resource Development", "description": "Adversary obtains a network of compromised hosts to support later operations."},
+      {"technique_id": "T1498", "technique_name": "Network Denial of Service", "tactic": "Impact", "description": "Compromised hosts generate traffic intended to exhaust a target's availability."}
+    ],
+    "unknown": [
+      {"technique_id": "T1595", "technique_name": "Active Scanning", "tactic": "Reconnaissance", "description": "Assigned as a default when the observed behaviour is not yet attributable to a specific technique."}
+    ]
+  }
+}
