@@ -1,0 +1,21 @@
+# secrets
+.env
+
+# python
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+venv/
+.venv/
+
+# generated artefacts (recreated by run_pipeline.py)
+data/threat_intel.db
+models/*.pkl
+models/evaluation_metrics.json
+reports/*.md
+
+# keep the folders themselves
+!models/.gitkeep
+!reports/.gitkeep
+!screenshots/.gitkeep
