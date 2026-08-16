@@ -171,7 +171,7 @@ python -m src.detection                 # print the saved evaluation report
 ### Google Colab
 
 ```python
-!git clone https://github.com/<your-username>/ai-based-threat-intelligence-platform.git
+git clone https://github.com/shrihariprao/ai-based-threat-intelligence-platform.git
 %cd ai-based-threat-intelligence-platform
 !pip install -q -r requirements.txt
 !python run_pipeline.py --regenerate --train
